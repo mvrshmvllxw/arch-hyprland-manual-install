@@ -2,7 +2,7 @@
 
 ![system screen](./screenshots/screen.png)
 
-![Video Preview](https://mega.nz/file/BZlFiZzS#LSdctfZS23Rrj86vcrjySqEcBuJNBAH4TuntJG4nH90)
+[Video Preview](https://mega.nz/file/BZlFiZzS#LSdctfZS23Rrj86vcrjySqEcBuJNBAH4TuntJG4nH90)
 
 Tutorial on how to install Arch and configure the desktop environment yourself
 
