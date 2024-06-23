@@ -116,7 +116,7 @@ also check
 
 > makepkg -si
 
-if compile errors try install rust via `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+if compile errors try install rust via `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` or `sudo pacman -S rustup && rustup install stable`
 
 # chaotic aur (optional)
 
