@@ -1,5 +1,4 @@
-
-## sddm theme
+# sddm theme
 
 > sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
 
@@ -18,8 +17,7 @@ and edit
 
     /usr/share/sddm/themes/sddm-astronaut-theme/theme.conf
 
-
-## wallpapers
+# wallpapers
 
 > paru -S swww
 
@@ -33,19 +31,19 @@ set image:
 
 > swww img path/to/img
 
-## wlogout
+# wlogout
 
 > paru -S wlogout
 
 `~/.config/wlogout`
 
-## swaylock
+# swaylock
 
 > sudo apcman -S swaylock
 
 `~/.config/swaylock`
 
-## dunst of swaync
+# dunst of swaync
 
 > sudo pacman -S dunst
 
@@ -55,8 +53,14 @@ set image:
 
 `~/.config/swaync`
 
-## rofi
+# rofi
 
 > paru -S rofi-lbonn-wayland-git
 
 `~/.config/rofi`
+
+# link
+
+wlogout rofi swaync swaylock theme
+
+install from https://github.com/zDyanTB/HyprNova

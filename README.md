@@ -18,7 +18,7 @@ Tutorial on how to install Arch and configure the desktop environment yourself
 
 > 5_Additional_Desktop.md
 
-> 6_Draft.md
+> 6_Software.md
 
 
 
