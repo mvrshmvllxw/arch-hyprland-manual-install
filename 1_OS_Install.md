@@ -34,15 +34,19 @@ prepare pacman and mirrors to fix possible errors
 
 > pacman -Sy archlinux-keyring
 
-> sudo pacman -Su
+> pacman -Su
 
 # mirrors
 
-> pacman -S reflector
+> pacman -S reflector rsync
 
 > reflector --verbose --latest 15 --sort rate --save /etc/pacman.d/mirrorlist
 
 # installer
+
+install python
+
+> pacman -S python
 
 run automatic installer
 

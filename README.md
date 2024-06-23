@@ -10,11 +10,11 @@ Tutorial on how to install Arch and configure the desktop environment yourself
 
 > 1_OS_Install.md
 
-> 2_After_OS_Install.md
+> 2_Pacman_Setup.md
 
 > 3_Terminal_Setup.md
 
-> 4_Desktop_Environment.md
+> 4_Top_Menu_And_Themes.md
 
 > 5_Additional_Desktop.md
 

@@ -1,3 +1,12 @@
+# enable ctrl+c/v in kitty
+
+> nano ~/.config/kitty/kitty.conf
+
+add
+
+    map ctrl+c copy_and_clear_or_interrupt
+    map ctrl+v paste_from_clipboard
+
 # wi-fi
 
 use win+q to open kitty (terminal)
@@ -19,6 +28,7 @@ nmcli dev disconnect wlan0
 # if got any errors try
 sudo systemctl restart NetworkManager
 ```
+
 # enable bluetooth
 
 > sudo systemctl enable bluetooth.service 
@@ -29,7 +39,7 @@ sudo systemctl restart NetworkManager
 
 download and set the hyprland config
 
-> curl -o ~/.config/hypr/hyprland.conf https://raw.githubusercontent.com/mvrshmvllxw/arch-hyprdots/main/.config/hypr/hyprland.conf
+> curl -o ~/.config/hypr/hyprland.conf https://raw.githubusercontent.com/mvrshmvllxw/arch-hyprland-manual-install/main/.config/hypr/hyprland.conf
 
 use nano to edit it 
 
@@ -43,7 +53,7 @@ default:
     win+z - terminal (kitty), win+s - nautilus, win+f - firefox,
     win+1,+2,+3 - change desktop,
     win+right_mouse - change window size
-    capslock - switch keyboard layout
+    capslock - switch keyboard layout (en/ru)
 
 # pacman keys
 
@@ -71,16 +81,20 @@ add:
 
     ILoveCandy
 
+also check
+
+    [multilib]
+    Include = /etc/pacman.d/mirrorlist
+
 # mirrors
 
-> sudo pacman -S reflector
+> sudo pacman -S reflector rsync
 
 > sudo reflector --verbose --latest 15 --sort rate --save /etc/pacman.d/mirrorlist
 
 > sudo pacman -Sy
 
 > sudo pacman -Su
-
 
 # user dirs
 
@@ -92,7 +106,7 @@ add:
 
 > sudo pacman -S --needed base-devel git
 
-# paru (for aur packages)
+# paru (for aur packages, optional)
 
 > cd ~/Downloads
 
@@ -102,7 +116,9 @@ add:
 
 > makepkg -si
 
-# chaotic aur
+if compile errors try install rust via `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+
+# chaotic aur (optional)
 
 > sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 

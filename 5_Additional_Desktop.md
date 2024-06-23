@@ -1,5 +1,4 @@
 
-
 ## sddm theme
 
 > sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
@@ -26,35 +25,38 @@ and edit
 
 > swww-daemon (or reboot and hyprland config will start swww)
 
-set image:
-
-> swww img path/to/img
-
 reboot or
 
 > sudo systemctl enable swww-daemon.service
+
+set image:
+
+> swww img path/to/img
 
 ## wlogout
 
 > paru -S wlogout
 
-> cp -r ~/Downlaods/arch-hyprdots/.Config/wlogout ~/.Config/wlogout
+`~/.config/wlogout`
 
 ## swaylock
 
 > sudo apcman -S swaylock
 
-> cp -r ~/Downlaods/arch-hyprdots/.Config/swaylock ~/.Config/swaylock
+`~/.config/swaylock`
 
-
-## dunst
+## dunst of swaync
 
 > sudo pacman -S dunst
 
-> cp -r ~/Downlaods/arch-hyprdots/.Config/dunst ~/.Config/dunst
+`~/.Config/dunst`
+
+> sudo pacman -S swaync
+
+`~/.config/swaync`
 
 ## rofi
 
 > paru -S rofi-lbonn-wayland-git
 
-> cp -r ~/Downlaods/arch-hyprdots/.Config/rofi ~/.Config/rofi
+`~/.config/rofi`
